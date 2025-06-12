@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate & Support | Have It Alive Foundation</title>
+    <link rel="stylesheet" href="donor.css">
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+      <header>
+        <nav class="main-nav">
+            <a href="home.html" class="logo">HAVE IT ALIVE</a>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="grant.html">Apply for Grant</a></li>
+            </ul>
+            <a href="donate.html" class="btn btn-primary">Donate</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Support Our Mission</h2>
+                <p style="text-align: center; max-width: 800px; margin: -2rem auto 3rem auto;">
+                    Your generous donation fuels our projects and brings hope to communities. You can donate directly to our bank account. Every contribution, no matter the size, makes a difference.
+                </p>
+
+                <div class="donation-container">
+                    <!-- Section 1: Bank Account Details -->
+                    <div class="bank-details-card">
+                        <h3>Official Donation Accounts</h3>
+                        <div class="bank-account">
+                            <p>
+                                <strong>Account Name:</strong>
+                                HAVE IT ALIVE FOUNDATION
+                            </p>
+                            <p>
+                                <strong>Account Number:</strong>
+                                1234567890
+                            </p>
+                             <p>
+                                <strong>Bank:</strong>
+                                Zenith Bank Plc
+                            </p>
+                        </div>
+                        <hr style="margin: 2rem 0; border-color: #ddd;">
+                        <div class="bank-account">
+                            <p>
+                                <strong>Account Name:</strong>
+                                HAVE IT ALIVE FOUNDATION
+                            </p>
+                            <p>
+                                <strong>Account Number:</strong>
+                                0987654321
+                            </p>
+                             <p>
+                                <strong>Bank:</strong>
+                                Guaranty Trust Bank (GTB)
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Donor Wall of Support -->
+                    <div class="donor-wall">
+                        <h3><i class="fas fa-heart"></i> Wall of Support</h3>
+                        <p>After donating, add your name to our wall to inspire others! Your entry will appear immediately.</p>
+                        
+                        <form id="donation-form" class="form-container" style="padding: 0; background: none;">
+                            <div class="form-group">
+                                <label for="donorName">Your Name</label>
+                                <input type="text" id="donorName" placeholder="e.g., Jane Doe or Anonymous" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="donationAmount">Amount Donated (NGN)</label>
+                                <input type="number" id="donationAmount" placeholder="e.g., 5000" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Add My Donation</button>
+                        </form>
+
+                        <hr style="margin-bottom: 2rem;">
+
+                        <h4>Recent Donors</h4>
+                        <div id="donor-list">
+                            <!-- Donor names will be dynamically inserted here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 Have It Alive Foundation. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="donor.js"></script>
+</body>
+</html>

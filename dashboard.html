@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | HIAF</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+         <nav class="main-nav">
+            <a href="#" class="logo">ADMIN DASHBOARD</a>
+            <button id="logout-btn" class="btn btn-primary">Logout</button>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="container" id="dashboard-container" style="max-width: 95%; padding: 0 1rem;">
+            <h2 class="section-title">Grant Applications</h2>
+            <div style="overflow-x:auto;">
+                 <table class="dashboard-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>NIN</th>
+                            <th>BVN</th>
+                            <th>Origin (State/LGA)</th>
+                            <th>Bank Details</th>
+                            <th>Business Nature</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="applications-tbody">
+                        <!-- Application rows will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Application - HAVE IT ALIVE FOUNDATION</title>
+    <link rel="stylesheet" href="grant.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/IMG-20250612-WA0014.jpg" alt="HIAF Logo" class="logo">
+            <h1>HAVE IT ALIVE FOUNDATION</h1>
+            <h2>Grant Application Portal</h2>
+        </header>
+
+        <form id="grant-form">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="passport">Passport Photograph (Image file)</label>
+                <input type="file" id="passport" name="passport" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nin">National Identification Number (NIN)</label>
+                <input type="text" id="nin" name="nin" pattern="\d{11}" title="NIN must be 11 digits" required>
+            </div>
+
+            <div class="form-group">
+                <label for="bvn">Bank Verification Number (BVN)</label>
+                <input type="text" id="bvn" name="bvn" pattern="\d{11}" title="BVN must be 11 digits" required>
+            </div>
+
+            <div class="form-group">
+                <label for="homeAddress">Home Address</label>
+                <textarea id="homeAddress" name="homeAddress" rows="3" required></textarea>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="stateOfOrigin">State of Origin</label>
+                    <select id="stateOfOrigin" name="stateOfOrigin" required>
+                        <option value="" disabled selected>-- Select State --</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="lgaOfOrigin">Local Govt. of Origin</label>
+                    <select id="lgaOfOrigin" name="lgaOfOrigin" required disabled>
+                        <option value="" disabled selected>-- Select L.G.A --</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            
+            <fieldset>
+                <legend>Bank Account Details</legend>
+                 <div class="form-group">
+                    <label for="bankName">Bank Name</label>
+                    <input type="text" id="bankName" name="bankName" required>
+                </div>
+                 <div class="form-group">
+                    <label for="accountNumber">Account Number</label>
+                    <input type="text" id="accountNumber" name="accountNumber" pattern="\d{10}" title="Account number must be 10 digits" required>
+                </div>
+                 <div class="form-group">
+                    <label for="accountName">Account Name</label>
+                    <input type="text" id="accountName" name="accountName" required>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="businessNature">Nature of Business for Grant</label>
+                <textarea id="businessNature" name="businessNature" rows="4" placeholder="Briefly describe the business you plan to use the grant for..." required></textarea>
+            </div>
+
+            <div id="form-message"></div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+    </div>
+
+    <script src="apply.js"></script>
+</body>
+</html>
